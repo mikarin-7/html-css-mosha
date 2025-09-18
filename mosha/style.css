@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  font-size: 34px;
+  border-bottom: 1px solid #ddd;
+}
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+header a:first-child {
+  border: 1px solid #000000;
+  padding: 5px 15px;
+}
+
+/* トップ画像 */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* コンテンツ共通 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+/* About */
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.about h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Works */
+.works {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.works div {
+  width: 30%;
+  min-width: 250px;
+}
+.works img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.works p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #000000;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 767px) {
+  header {
+    font-size: 24px;
+    gap: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .about h3 {
+    font-size: 20px;
+  }
+
+  .about p,
+  .works p,
+  footer {
+    font-size: 16px;
+  }
+
+  /* Worksを縦並び＆大きく */
+  .works {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .works div {
+    width: 100%;
+  }
+
+  .works img {
+    width: 100%;
+    height: auto;
+  }
+
+  .works p {
+    text-align: center;
+  }
+}
+
