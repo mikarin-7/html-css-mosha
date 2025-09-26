@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.7rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+header h1 img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2em;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/* トップ画像 */
+#mainvisual {
+  max-width: 1000px;
+  margin: auto;
+}
+#mainvisual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* セクション共通 */
+section {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0 16px;
+}
+section h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  text-align: center;
+  border-bottom: solid 1px #383e45;
+}
+
+/* About */
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#about img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#about h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+#about ul {
+  padding-left: 1.2rem;
+}
+#about ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+/* Bicycle */
+#bicycle ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#bicycle ul li {
+  list-style: none;
+  width: 30%;
+  text-align: center;
+}
+#bicycle ul li img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: block;
+}
+#bicycle h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+#bicycle ul li ul {
+  padding: 0;
+}
+#bicycle ul li ul li {
+  list-style: none;
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+
+/* フッター */
+footer {
+  max-width: 1000px;
+  text-align: center;
+  padding: 20px 0 50px;
+  font-size: 14px;
+  color: #000000;
+  border-top: 1px solid #ddd;
+  margin: auto;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 600px) {
+  header {
+    margin: 20px 16px;
+  }
+  header h1 a {
+    font-size: 18px;
+    padding: 4px 12px;
+  }
+  header nav ul {
+    gap: 1rem;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+
+  section {
+    margin: 60px auto;
+  }
+  section h2 {
+    font-size: 28px;
+  }
+
+  #about .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  #about img {
+    margin-bottom: 20px;
+  }
+
+  #bicycle ul {
+    flex-direction: column;
+  }
+  #bicycle ul li {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
