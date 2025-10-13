@@ -1,0 +1,188 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #f5f9fc;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* header */
+#header {
+  background-color: #f3f6f9;
+  padding: 40px 0 20px;
+}
+
+
+#hesder .wrapper {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 0;
+}
+
+.site-title a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.site-title img {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+/* mainvisual */
+#mainvisual {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#mainvisual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* INDEX */
+#index {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 60px;
+  border-radius: 8px;
+}
+
+#index h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#index ol {
+  padding-left: 1.5em;
+  list-style-position: inside;
+  margin: 0;
+}
+
+#index ol li {
+  margin-bottom: 8px;
+  line-height: 1.6em;
+}
+
+/* DETAIL */
+#detail {
+  margin-top: 60px;
+}
+
+#detail h2 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#detail .content {
+  display: flex;
+  align-items: flex-start; /* 上揃え */
+  justify-content: space-between;
+  gap: 40px; /* 画像とテキストの間隔 */
+}
+
+#detail img {
+  width: 260px; /* 固定幅で整える */
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#detail .text {
+  flex: 1; /* 残りの幅を使用 */
+}
+
+#detail h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 著者・出版社・発行年 */
+section#detail dl {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+#detail dt {
+  font-weight: bold;
+  float:left;
+  clear: left;
+  width: 5em;
+}
+
+#detail dd {
+  margin: 0 0 10px 5em;
+}
+
+/* リンクと本文 */
+#detail p {
+  margin-bottom: 20px;
+}
+
+#detail a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 1024px) {
+
+  .wrapper {
+    width: 90%;
+  }
+
+  #mainvisual {
+    width: 100%;
+  }
+
+  section#detail {
+    display: block;
+  }
+
+  section#detail img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  section#detail .text {
+    width: 100%;
+  }
+
+  section#index {
+    padding: 20px;
+  }
+
+  section#index h2 {
+    font-size: 1.2rem;
+  }
+
+  section#detail h3 {
+    font-size: 1rem;
+  }
+}
