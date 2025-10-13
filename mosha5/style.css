@@ -1,0 +1,113 @@
+/* 共通設定 */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans", Meiryo, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* ヘッダー・メインビジュアル */
+.header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.mainvisual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* タイトル・説明文 */
+.intro {
+  padding: 60px 20px;
+}
+.intro h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.intro p {
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* 写真3枚 */
+.photo-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.photo-list li {
+  flex: 1;
+}
+.photo-list img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ボタン */
+.btn-area {
+  margin: 60px 0;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 50px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* フッター */
+.footer {
+  padding: 40px 0;
+  font-size: 12px;
+}
+.sns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+.sns a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+.sns a:hover {
+  opacity: 0.7;
+}
+
+/* スマホ対応（834px以下） */
+@media (max-width: 834px) {
+  .mainvisual {
+    height: 100vh;
+  }
+
+  .photo-list {
+    flex-direction: column;
+  }
+
+  .photo-list img {
+    height: auto;
+  }
+
+  .intro {
+    padding: 40px 15px;
+  }
+
+  .intro h1 {
+    font-size: 22px;
+  }
+}
