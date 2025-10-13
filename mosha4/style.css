@@ -1,0 +1,176 @@
+/* 全体 */
+body {
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* コンテンツ幅 */
+.wrapper {
+  width: 800px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  width: 1000px;
+  max-width: 100%;
+  margin: 40px auto 0;
+  text-align: left;
+}
+
+.site-title {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.site-title img {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+.mainvisual {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* index */
+.index {
+  background: #f7f7f7;
+  padding: 40px;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.index h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.index-box {
+  border: 1px solid #999;
+  display: inline-block;
+  padding: 20px 40px;
+  text-align: left;
+}
+
+.index ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* photo list */
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+  margin: 60px 0;
+  padding: 0;
+}
+
+.list li img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ditail */
+.detail {
+  background: #f7f7f7;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+
+.detail-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.detail h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* dl構造の調整 */
+.detail dl {
+  margin: 0;
+}
+
+.detail dt {
+  font-weight: bold;
+  float: left;
+  clear: left;
+  width: 70px;
+}
+
+.detail dd {
+  margin: 0 0 10px 80px;
+}
+
+.detail .info {
+  flex: 1;
+}
+
+.detail .text {
+  flex: 2;
+  border-left: 1px solid #999;
+  padding-left: 40px;
+}
+
+.detail a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.detail a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+/*　スマホ対応  */
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-inner {
+    flex-direction: column;
+  }
+
+  .detail .text {
+    border-left: none;
+    border-top: 1px solid #999;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .detail dt {
+    width: auto;
+    float: none;
+    margin-top: 10px;
+  }
+
+  .detail dd {
+    margin-left: 0;
+  }
+}
